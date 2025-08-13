@@ -6,7 +6,7 @@
             </div>
         </RouterLink>
 
-        <RouterLink to="/cart" class="cart-link">
+        <RouterLink to="/users/12345/cart" class="cart-link">
             <button>Shopping Cart</button>
         </RouterLink>
     </div>

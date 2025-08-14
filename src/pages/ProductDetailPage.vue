@@ -68,7 +68,7 @@ export default {
       const email = prompt("Enter your email to sign in")
       const auth = getAuth();
       const actionCodeSettings = {
-        url: `http://localhost:8080/products/${this.$route.params.productId}`,
+        url: `https://vue-course-jjn6.onrender.com/products/${this.$route.params.productId}`,
         handleCodeInApp: true,
       }
 

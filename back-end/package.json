@@ -12,7 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@babel/runtime": "^7.28.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mongodb": "^6.18.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.0",

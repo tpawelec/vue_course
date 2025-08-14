@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.28.2",
     "axios": "^1.11.0",
     "core-js": "^3.8.3",
     "firebase": "^9.15.0",

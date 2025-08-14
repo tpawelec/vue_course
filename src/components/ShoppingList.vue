@@ -5,13 +5,14 @@
         <h3>{{ product.name }}</h3>
         <p>{{ product.price }}</p>
     </div>
-    <button class="remove-button">Remove from cart</button>
+    <button @click="$emit('remove-from-cart', product.id)" class="remove-button">Remove from cart</button>
 </div>
 </template>
 
 <script>
 export default {
     name: "ShoppingList",
-    props: ['cartItems']
+    props: ['cartItems'],
+    emits: ["remove-from-cart"]
 }
 </script>

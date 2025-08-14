@@ -45,7 +45,7 @@ createApp(App)
         redirect: '/products'
     },
     {
-        path: '/:pathMatch(.*)*',
+        path: '/:pathMatch(.{*any}){*any}',
         component: NotFoundPage
     }
 ]

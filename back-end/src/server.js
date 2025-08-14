@@ -18,7 +18,7 @@ async function start() {
         path.resolve(__dirname, '../dist'),
         { maxAge: '1y', etag: false}
     ))
-    
+
     async function populateCartIds(ids) {
         await client.connect();
         const db = client.db('vue_course');
@@ -83,7 +83,7 @@ async function start() {
 
     })
 
-    app.get('*', (req, res) => {
+    app.get('{*any}', (req, res) => {
         res.sendFile(path.join(__dirname, '../dist/index.html'))
     })
 
